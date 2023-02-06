@@ -7,3 +7,7 @@ venv/
 
 # Env variables
 *.env
+
+# logging, config
+log.ini
+logfile.log
