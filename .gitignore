@@ -1,0 +1,9 @@
+# IDE files
+.idea
+
+# Environments
+.venv
+venv/
+
+# Env variables
+*.env
