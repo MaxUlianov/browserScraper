@@ -10,7 +10,6 @@ def get_full_page(url: str):
         page.goto(url)
 
         page.wait_for_selector("div#forecast_list_ul")
-        print(page.content())
 
         contents = page.content()
 
@@ -18,6 +17,6 @@ def get_full_page(url: str):
 
 
 if __name__ == '__main__':
-    c = get_full_page('london')
-    with open('page.html', 'w') as file:
+    c = get_full_page('https://openweathermap.org/find?q=abyrwalg')
+    with open('page-nf.html', 'w') as file:
         print(c, file=file)
