@@ -8,8 +8,7 @@ venv/
 # Env variables
 *.env
 
-# logging, config
-log.ini
+# logging
 logfile.log
 
 # page templates
