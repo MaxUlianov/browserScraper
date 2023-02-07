@@ -1,0 +1,1 @@
+web:  playwright install && uvicorn app:app --reload --log-config log.ini

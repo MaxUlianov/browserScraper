@@ -11,3 +11,7 @@ venv/
 # logging, config
 log.ini
 logfile.log
+
+# page templates
+page.html
+page-nf.html

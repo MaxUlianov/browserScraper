@@ -53,7 +53,13 @@ def browse_page(request: Request, api_key: APIKey = Depends(get_api_key)):
 
     url = request.headers.get('link')
     logging.info(f'Received url for parsing: {url}')
-    return get_full_page(url)
+
+    try:
+        page_html = get_full_page(url)
+    except Exception as e:
+        return repr(e)
+
+    return page_html
 
 
 @app.get("/logs")
